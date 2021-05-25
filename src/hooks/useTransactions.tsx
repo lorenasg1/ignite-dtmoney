@@ -36,7 +36,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
   useEffect(() => {
     api
-      .get('https://localhost:3000/api/transactions')
+      .get('/transactions')
       .then((response) => setTransactions(response.data.transactions));
   }, []);
 
